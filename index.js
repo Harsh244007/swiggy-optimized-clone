@@ -20,4 +20,4 @@ app.listen(port, () => {
 });
 
 app.get("/api/js/app.9e9cdc4db42e535.min.js", (_, res) => res.sendFile(path.join(__dirname, "/public/api/js/app.9e9cdc4db42e535.min.js")));
-app.get("*", (_, res) => res.sendFile(path.join(__dirname, "/index.html")));
+app.get("*", (_, res) => res.sendFile(path.join(__dirname, "/public/index.html")));
