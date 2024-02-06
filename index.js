@@ -28,8 +28,8 @@ app.get("/hello", (e, p) => {
   app.get("/api/js/app.9e9cdc4db42e535.min.js", (e, p) =>
     p.sendFile(path.join(__dirname, "/public/api/js/app.9e9cdc4db42e535.min.js"))
   ),
-  app.get("/api/js/es5-app.e94d64c6e2c0b3e6.js", (e, p) =>
-    p.sendFile(path.join(__dirname, "/public/api/js/es5-app.e94d64c6e2c0b3e6.js"))
+  app.get("/api/js/es5-app.e94d64c6e2c0b3e6.min.js", (e, p) =>
+    p.sendFile(path.join(__dirname, "/public/api/js/es5-app.e94d64c6e2c0b3e6.min.js"))
   ),
   app.get("/api/css/index.css", (e, p) => p.sendFile(path.join(__dirname, "/public/api/css/index.css"))),
   app.get("*", (e, p) => {
